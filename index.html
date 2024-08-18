@@ -42,6 +42,17 @@
       }
     }
     </script>
+    <script>
+          document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    
+    <script>
+            document.onkeydown = function(e) {
+                if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'i' || e.key === 'j')) {
+                  return false;
+                        }
+                        };
+    </script>
 
     <!-- Hreflang (for multilingual websites) -->
     <link rel="alternate" hreflang="en" href="https://snap-tube.github.io/snap-tube/" />
